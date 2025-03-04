@@ -11,6 +11,9 @@ class IndexController extends AbstractActionController
 {
     public function indexAction()
     {
-        return new ViewModel();
+            $b = $this->events;
+            $b = $this->events;
+        // add events to the vew model
+        return new ViewModel($b);
     }
 }
